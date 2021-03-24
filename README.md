@@ -16,3 +16,11 @@ Activate and Dynamic rules are phased out in favor of a combination of tagging (
 ```
 
 因此改用flowbits 中的set 和isset来实现。
+
+## 关于RE
+
+在lzx大佬的指点之下，发现v1的RE写的不足
+
+1. 端口为0-65535：`^([0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{2}|655[0-2][0-9]|6553[0-5])$`
+
+2. 一个RE的可视化网站：https://regexper.com/
